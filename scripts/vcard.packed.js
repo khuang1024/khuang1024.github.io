@@ -54,31 +54,30 @@ function setupScroller() {
 function setupMenu() {
     $("#menu").children().click(function () {
         scrollTo($(this).children().attr('href'));
-    })
+    });
 }
 
 function setupWork() {
     //workpages = Math.ceil($('#vcard').height() / 200);
-    workpages = Math.ceil($('#workscroller').height() / 170);
-    $(".work").children('li:nth-child(3n+3)').addClass('last');
-    $('#worknavigation').html('');
+    workpages = Math.ceil($('#resumescroller').height() / 170);
+    $('#resumenavigation').html('');
     if (workpages > 1) {
-        for (i = 0; i < workpages; i++) {
+        for (var i = 0; i < workpages; i++) {
             if (i) {
-                $('#worknavigation').append('<li>' + (i + 1) + '</li>')
+                $('#resumenavigation').append('<li>' + (i + 1) + '</li>');
             } else {
-                $('#worknavigation').append('<li class="active">' + (i + 1) + '</li>')
+                $('#resumenavigation').append('<li class="active">' + (i + 1) + '</li>');
             }
         }
         activeWorkPage = 0;
-        $("#worknavigation").children().click(function () {
+        $("#resumenavigation").children().click(function () {
             if (activeWorkPage != $(this).index()) {
                 activeWorkPage = $(this).index();
-                $("#worknavigation").children().removeClass('active');
-                $("#worknavigation").children(':eq(' + activeWorkPage + ')').addClass('active');
-                scrollWork(activeWorkPage)
+                $("#resumenavigation").children().removeClass('active');
+                $("#resumenavigation").children(':eq(' + activeWorkPage + ')').addClass('active');
+                scrollWork(activeWorkPage);
             }
-        })
+        });
     }
     $(".work").children().hover(function () {
         $(this).children('a').children(".worktitle").animate({
@@ -86,15 +85,15 @@ function setupWork() {
         }, 200);
         $(this).children('a').children("img").animate({
             opacity: 0.5
-        }, 200)
+        }, 200);
     }, function () {
         $(this).children('a').children(".worktitle").animate({
             marginTop: 0
         }, 200);
         $(this).children('a').children("img").animate({
             opacity: 1
-        }, 200)
-    })
+        }, 200);
+    });
 }
 
 function setupNetworks() {
@@ -106,13 +105,13 @@ function setupNetworks() {
         $(this).children('a').children(".background").fadeIn(150);
         $(this).children('a').children(".content").animate({
             marginLeft: 5
-        }, 150)
+        }, 150);
     }, function () {
         $(this).children('a').children(".background").fadeOut(150);
         $(this).children('a').children(".content").animate({
             marginLeft: 0
-        }, 150)
-    })
+        }, 150);
+    });
 }
 
 function setupContact() {
@@ -121,17 +120,17 @@ function setupContact() {
         if (!emailValues[$(this).attr('name')]) {
             emailValues[$(this).attr('name')] = $(this).val();
             $(this).val('');
-            $(this).css('color', '#555')
+            $(this).css('color', '#555');
         }
         if ($(this).val() == emailValues[$(this).attr('name')]) {
             $(this).val('');
-            $(this).css('color', '#555')
+            $(this).css('color', '#555');
         }
     });
     $('input:text[name=name],input:text[name=email],textarea[name=message]').blur(function () {
         if (!$(this).val()) {
             $(this).css('color', '#999');
-            $(this).val(emailValues[$(this).attr('name')])
+            $(this).val(emailValues[$(this).attr('name')]);
         }
     });
     $('.sendmail').click(function () {
@@ -141,19 +140,19 @@ function setupContact() {
         mail_message = $('textarea[name=message]').val();
         if (!mail_name || mail_name == emailValues['name'] || !emailValues['name']) {
             $('input:text[name=name]').addClass('error');
-            mail_error = 1
+            mail_error = 1;
         }
         if (!mail_email || mail_email == emailValues['email'] || !emailValues['email']) {
             $('input:text[name=email]').addClass('error');
-            mail_error = 1
+            mail_error = 1;
         } else {
             if ((mail_email.indexOf('@') < 0) || ((mail_email.charAt(mail_email.length - 4) != '.') && (mail_email.charAt(mail_email.length - 3) != '.'))) {
                 $('input:text[name=email]').addClass('error');
-                mail_error = 1
+                mail_error = 1;
             }
         } if (!mail_message || mail_message == emailValues['message'] || !emailValues['message']) {
             $('textarea[name=message]').addClass('error');
-            mail_error = 1
+            mail_error = 1;
         }
         if (!mail_error) {
             $.post("sendmail.php", {
@@ -162,11 +161,11 @@ function setupContact() {
                 message: mail_message
             }, function (data) {
                 $("#email_form").fadeOut(200, function () {
-                    $("#email_send").fadeIn(800)
-                })
-            })
+                    $("#email_send").fadeIn(800);
+                });
+            });
         }
-    })
+    });
 }
 
 function scrollTo(href, direct) {
@@ -185,7 +184,7 @@ function scrollTo(href, direct) {
                 scrollerComplete = 0;
                 if (direct) {
                     $("#scroller").css('marginLeft', scrollToPos);
-                    scrollerComplete = 1
+                    scrollerComplete = 1;
                 } else {
                     if (!iexplorer) {
                         $("#scroller").animate({
@@ -197,16 +196,16 @@ function scrollTo(href, direct) {
                                 $("#scroller").animate({
                                     opacity: 1
                                 }, 200, function () {
-                                    scrollerComplete = 1
-                                })
-                            })
-                        })
+                                    scrollerComplete = 1;
+                                });
+                            });
+                        });
                     } else {
                         $("#scroller").animate({
                             marginLeft: scrollToPos
                         }, 500, function () {
-                            scrollerComplete = 1
-                        })
+                            scrollerComplete = 1;
+                        });
                     }
                 }
             }
@@ -217,21 +216,21 @@ function scrollTo(href, direct) {
 function scrollWork(page) {
     scrollY = -(page * 165);
     if (!iexplorer) {
-        $("#workscroller").animate({
+        $("#resumescroller").animate({
             opacity: 0.4
         }, 200, function () {
-            $("#workscroller").animate({
+            $("#resumescroller").animate({
                 marginTop: scrollY
             }, 400, function () {
-                $("#workscroller").animate({
+                $("#resumescroller").animate({
                     opacity: 1
-                }, 200)
-            })
-        })
+                }, 200);
+            });
+        });
     } else {
-        $("#workscroller").animate({
+        $("#resumescroller").animate({
             marginTop: scrollY
-        }, 400)
+        }, 400);
     }
 }
 
@@ -259,5 +258,5 @@ function loadCufon() {
     });
     Cufon('h3', {
         textShadow: '1px 1px 2px #fff'
-    })
+    });
 }

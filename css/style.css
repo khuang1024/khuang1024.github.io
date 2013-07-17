@@ -31,9 +31,12 @@ textarea{font-family:Arial;padding:8px 0 8px 5px;margin:0 0 10px 0;width:420px;b
 .small a{color:#777;text-decoration:none}
 .pagetitle{display:none}
 .nopadding{padding:0}
-.alignleft{float: left;}
-.alignright{float: right;}
-.alignclear{clear: both;}
+.alignleft{float: left;padding:0}
+.alignright{float: right;padding:0}
+.alignclear{clear: both;padding:0}
+
+
+
 
 /*----------------------------------Items----------------------------------*/
 #wrapper{min-width:800px;min-height:500px}
@@ -42,6 +45,9 @@ textarea{font-family:Arial;padding:8px 0 8px 5px;margin:0 0 10px 0;width:420px;b
 .sidebar{float:left;margin:0px;width:170px;height:240px;}
 .button{padding:6px 8px;border:1px solid #09a0ff;background:url(../images/vcard/button.gif) repeat-x;color:#fff;text-shadow:1px 1px 1px #1069a1;text-transform:uppercase;font-size:9px;font-weight:bold;text-decoration:none;-moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px}
 .button:hover{background-position-y:-24px;border-color:#1e8dff;text-shadow:1px 1px 1px #3284ff}
+
+
+
 
 /*----------------------------------Header----------------------------------*/
 #header{margin:30px 30px 0 30px;height:100px}
@@ -54,37 +60,38 @@ textarea{font-family:Arial;padding:8px 0 8px 5px;margin:0 0 10px 0;width:420px;b
 #header ul#menu li a:hover{color:#555; border-bottom:2px solid #e3e3e3; border-margin:10px;}
 #header ul#menu li.active a{color:#555;}
 
+
+
+
 /*----------------------------------Content----------------------------------*/
 #content{position:relative;margin:25px 30px 0 50px;height:240px;overflow:hidden}
 #scroller{position:relative;height:240px}
 #scroller .contentitem{width:710px;height:240px;float:left;display:none;margin-right:30px}
 
-/*----------------------------------Skills----------------------------------*/
-.skills{margin:10px 0 0 0}
-.skills .topic{padding:15px 10px 14px 0;border-bottom:1px solid #ddd;float:left;width:1024px;font-weight:bold;color:#777;font-size:14px;text-shadow:1px 1px 1px #fff;height:7px}
+
 
 
 /*----------------------------------Work----------------------------------*/
-#workmask{width:710px;height:185px;position:relative;margin-top:25px;overflow:hidden}
-#workscroller{width:710px;position:absolute;margin-top:0}
-.work-item-preview {display:block;background:url(../images/vcard/bg-fade.png) no-repeat center center;}
-ul.work{margin-top:0}
-ul.work p{margin:0;padding:0}
-ul.work h3{border-bottom:1px solid #ddd;padding:10px 0;width:690px;font-weight:bold;color:#777;font-size:14px;text-shadow:1px 1px 1px #fff;height:7px}
-ul.work li{padding:0;display:block;list-style:none;width:700px;margin:0 15px 15px 0;/*background:url(../images/vcard/workbg.png);*/overflow:hidden}
-/*ul.work li h3{border-bottom:1px solid #ddd;padding:10px 0;width:690px;font-weight:bold;color:#777;font-size:14px;text-shadow:1px 1px 1px #fff;height:7px}*/
-ul.work li p{padding:0;color:#777;text-shadow:1px 1px 1px #fff;line-height:16px}
-ul.work li.last{margin:0 0 15px 0}
-ul.work li .worktitle{font-family:Verdana;position:relative;margin:-55px 0 0 0;margin:0 0 0 0;padding:10px 7px 7px 7px;width:211px;height:14px;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:#dedede;font-weight:bold;font-size:13px;text-transform:uppercase;list-style:none}
-ul.work li img{width:225px;height:85px;overflow:hidden}
-ul.circle {padding: 0}
-ul.circle li {list-style:circle inside;padding: 0}
+.work{margin:10px 0 0 0}
+.work .topic{padding:15px 10px 14px 0;border-bottom:1px solid #ddd;float:left;width:460px;font-weight:bold;color:#777;font-size:14px;text-shadow:1px 1px 1px #fff;height:7px}
+
+
+
+
+/*----------------------------------Resume----------------------------------*/
+#resumemask{width:710px;height:185px;position:relative;margin-top:25px;overflow:hidden}
+#resumescroller{width:710px;position:absolute;margin-top:0}
 ul.navigation{float:right;margin:5px 0 0 0}
 ul.navigation li{float:left;margin-left:5px;padding:3px 5px 3px 6px;background:#ddd;color:#777;font-weight:bold;text-shadow:1px 1px 1px #fff;border-right:1px solid #fff;border-bottom:1px solid #fff;-moz-border-radius:3px; -webkit-border-radius:3px; border-radius:3px; list-style:none; cursor:pointer}
 ul.navigation li.active{background:#ccc;color:#555;text-shadow:1px 1px 1px #eee;border:none;padding:3px 6px 4px 6px}
 ul.navigation li:hover{background:#ccc;border:none;padding:3px 6px 4px 6px}
-ul.item{color:#099;font-size:40px;list-style:circle inside}
-ul.item li{list-style:circle inside}
+.resume{margin:10px 0 0 0}
+.resume .topic{padding:20px 10px 14px 0;border-bottom:1px solid #ddd;float:left;width:690px;font-weight:bold;color:#777;font-size:14px;text-shadow:1px 1px 1px #fff;height:7px}
+.resume p{padding:0}
+
+
+
+
 /*----------------------------------Networks----------------------------------*/
 ul.networks li{float:left;width:140px;height:38px;padding:15px 25px 15px 0;list-style:none;cursor:pointer}
 ul.networks .last{width:139px}
