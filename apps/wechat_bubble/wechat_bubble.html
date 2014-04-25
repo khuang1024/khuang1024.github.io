@@ -422,13 +422,13 @@ function viewProfile() {
                 "desc": desc,
                 "title": title
             }, function (res) {
-                report(link, fakeid, 1);
+//                report(link, fakeid, 1);
             });
         });
 
         // 分享到朋友圈;
         WeixinJSBridge.on('menu:share:timeline', function (argv) {
-            report(link, fakeid, 2);
+//            report(link, fakeid, 2);
             WeixinJSBridge.invoke('shareTimeline', {
                 "img_url": imgUrl,
                 "img_width": "640",
@@ -449,13 +449,13 @@ function viewProfile() {
                 "content": title + share_scene(link, 3),
                 "url": share_scene(link, 3)
             }, function (res) {
-                report(link, fakeid, 3);
+//                report(link, fakeid, 3);
             });
         });
 
         // 分享到Facebook
         WeixinJSBridge.on('menu:share:facebook', function (argv) {
-            report(link, fakeid, 4);
+//            report(link, fakeid, 4);
             WeixinJSBridge.invoke('shareFB', {
                 "img_url": imgUrl,
                 "img_width": "640",
@@ -490,7 +490,7 @@ function viewProfile() {
                 "desc": desc,
                 "title": title
             }, function (res) {
-                report(link, fakeid, scene);
+//                report(link, fakeid, scene);
             });
         });
 
