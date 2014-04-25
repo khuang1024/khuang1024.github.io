@@ -28,14 +28,14 @@
       <file leaf-file-name="wechat_bubble.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/wechat_bubble/wechat_bubble.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="882" column="13" selection-start="27671" selection-end="27671" vertical-scroll-proportion="0.5497925" vertical-offset="12965" max-vertical-offset="13875">
+            <state line="402" column="87" selection-start="11957" selection-end="11957" vertical-scroll-proportion="0.43568465" vertical-offset="5820" max-vertical-offset="13875">
               <folding>
                 <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#15;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1398394624000" expanded="true" signature="716:806" placeholder="..." />
+                <marker date="1398394856000" expanded="true" signature="716:806" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -199,7 +199,7 @@
             <element signature="n#style#0;n#p#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#15;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398394624000" expanded="true" signature="716:806" placeholder="..." />
+            <marker date="1398394856000" expanded="true" signature="716:806" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -213,7 +213,7 @@
             <element signature="n#style#0;n#p#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#15;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398394624000" expanded="true" signature="716:806" placeholder="..." />
+            <marker date="1398394856000" expanded="true" signature="716:806" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -227,21 +227,21 @@
             <element signature="n#style#0;n#p#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#15;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398394624000" expanded="true" signature="716:806" placeholder="..." />
+            <marker date="1398394856000" expanded="true" signature="716:806" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/wechat_bubble/wechat_bubble.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="882" column="13" selection-start="27671" selection-end="27671" vertical-scroll-proportion="0.5497925" vertical-offset="12965" max-vertical-offset="13875">
+        <state line="402" column="87" selection-start="11957" selection-end="11957" vertical-scroll-proportion="0.43568465" vertical-offset="5820" max-vertical-offset="13875">
           <folding>
             <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#4;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#15;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1398394624000" expanded="true" signature="716:806" placeholder="..." />
+            <marker date="1398394856000" expanded="true" signature="716:806" placeholder="..." />
           </folding>
         </state>
       </provider>
